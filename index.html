@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lala Salama — Hostels & Excursions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html"><img src="img/logo.png" alt="Lala Salama Hostels & Excursions"></a>
+    <button class="burger" onclick="document.getElementById('navOverlay').classList.add('open')" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay">
+  <button class="close" onclick="document.getElementById('navOverlay').classList.remove('open')" aria-label="Close menu">✕</button>
+  <nav>
+    <a href="index.html#home" onclick="document.getElementById('navOverlay').classList.remove('open')">Home</a>
+    <div class="nav-item">
+      <a href="index.html#hostels" onclick="document.getElementById('navOverlay').classList.remove('open')">Hostels</a>
+      <div class="submenu">
+        <a href="lala-salama.html">Lala Salama</a>
+        <a href="containers-hostel.html">Containers Hostel</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="index.html#excursions" onclick="document.getElementById('navOverlay').classList.remove('open')">Excursions</a>
+      <div class="submenu">
+        <a href="komodo-sail.html">Lombok Komodo Sail</a>
+        <a href="rinjani-trekking.html">Mount Rinjani Trekking</a>
+      </div>
+    </div>
+    <a href="services.html" onclick="document.getElementById('navOverlay').classList.remove('open')">Services</a>
+    <a class="wa" href="https://wa.me/6281238146001" target="_blank">Contact (WhatsApp)</a>
+  </nav>
+</div>
+
+<!-- SECCIÓN HERO CON FONDO OSCURO Y TEXTO ENCIMA -->
+<section id="home" class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.65)), url('img/IMG_4177.jpeg') no-repeat center center; background-size: cover; padding: 120px 0; color: #fff; text-align: center;">
+  <div class="wrap">
+    <h1 style="color: #fff; font-size: 3.2rem; margin-bottom: 20px; font-weight: 700; text-shadow: 0 2px 14px rgba(0,0,0,.45);">Slow days, good vibes</h1>
+    <p class="lede" style="color: #fff; font-size: 1.15rem; max-width: 65ch; margin: 0 auto; text-shadow: 0 1px 8px rgba(0,0,0,.4);">Two hostels and excursions in Lombok, made for travelers looking for calm, good company and a bit of adventure.</p>
+  </div>
+</section>
+
+<section id="hostels" class="alt">
+  <div class="wrap">
+    <div class="eyebrow center">Our hostels</div>
+    <h2 class="center">Pick your base in Lombok</h2>
+    <div class="grid-2">
+      <a class="card" href="lala-salama.html">
+        <img class="art" src="img/lalasalama/IMG_4205.jpeg" alt="Lala Salama hostel exterior" style="height:190px;width:100%;object-fit:cover;">
+        <div class="body">
+          <h3>Lala Salama</h3>
+          <p>Hostel &amp; bar with a rooftop terrace and pool, laid-back atmosphere and good music at sunset.</p>
+          <span class="link">See details →</span>
+        </div>
+      </a>
+      <a class="card" href="containers-hostel.html">
+        <img class="art" src="img/containers-interior.jpg" alt="Containers Hostel interior" style="height:190px;width:100%;object-fit:cover;">
+        <div class="body">
+          <h3>Containers Hostel</h3>
+          <p>Rooms built from repurposed shipping containers, industrial-tropical design.</p>
+          <span class="link">See details →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow center">Reviews</div>
+    <h2 class="center">What our guests say</h2>
+  </div>
+  <div class="testi-viewport">
+    <div class="testi-track">
+      <div class="testi"><p>"The best vibe we've found in Lombok. We'll definitely be back."</p><p class="who">— Marta, Spain</p></div>
+      <div class="testi"><p>"The Komodo excursion was the highlight of the whole trip."</p><p class="who">— Tom, United Kingdom</p></div>
+      <div class="testi"><p>"Containers Hostel has beautiful design and the staff are super friendly."</p><p class="who">— Julia, Germany</p></div>
+      <div class="testi"><p>"Rinjani was brutal but the sunrise made every step worth it. Great guides."</p><p class="who">— Sofia, Italy</p></div>
+      <div class="testi"><p>"That pool at Lala Salama at sunset is honestly the best hour of the day."</p><p class="who">— Lucas, Brazil</p></div>
+      <div class="testi"><p>"Booked everything through reception, super easy, zero stress the whole trip."</p><p class="who">— Emma, Netherlands</p></div>
+      <div class="testi" aria-hidden="true"><p>"The best vibe we've found in Lombok. We'll definitely be back."</p><p class="who">— Marta, Spain</p></div>
+      <div class="testi" aria-hidden="true"><p>"The Komodo excursion was the highlight of the whole trip."</p><p class="who">— Tom, United Kingdom</p></div>
+      <div class="testi" aria-hidden="true"><p>"Containers Hostel has beautiful design and the staff are super friendly."</p><p class="who">— Julia, Germany</p></div>
+      <div class="testi" aria-hidden="true"><p>"Rinjani was brutal but the sunrise made every step worth it. Great guides."</p><p class="who">— Sofia, Italy</p></div>
+      <div class="testi" aria-hidden="true"><p>"That pool at Lala Salama at sunset is honestly the best hour of the day."</p><p class="who">— Lucas, Brazil</p></div>
+      <div class="testi" aria-hidden="true"><p>"Booked everything through reception, super easy, zero stress the whole trip."</p><p class="who">— Emma, Netherlands</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="excursions" class="alt">
+  <div class="wrap">
+    <div class="eyebrow center">Excursions</div>
+    <h2 class="center">Our excursions</h2>
+    <div class="grid-2">
+      <a class="card" href="komodo-sail.html">
+        <img class="art" src="img/komodo-boat.jpg" alt="Lombok Komodo Sail boat" style="height:190px;width:100%;object-fit:cover;">
+        <div class="body">
+          <h3>Lombok Komodo Sail</h3>
+          <p>Sailing trip through Komodo National Park: Komodo dragons, Pink Beach and snorkeling. 4 days / 3 nights.</p>
+          <span class="link">See details →</span>
+        </div>
+      </a>
+      <a class="card" href="rinjani-trekking.html">
+        <img class="art" src="img/rinjani-sunrise.jpg" alt="Sunrise over Rinjani crater" style="height:190px;width:100%;object-fit:cover;">
+        <div class="body">
+          <h3>Mount Rinjani Trekking</h3>
+          <p>Guided ascent of Mount Rinjani, with a night camping by the crater lake. Choose between 1 or 2 night itinerary.</p>
+          <span class="link">See details →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="eyebrow center">Services</div>
+    <h2 class="center">Getting around Lombok</h2>
+    <div class="grid-2 grid-3">
+
+      <div class="card" style="cursor:default;">
+        <img src="img/tranfer.jpg" alt="Airport and City Transfers" style="width:100%; height:190px; object-fit:cover; border-radius:4px 4px 0 0;">
+        <div class="body">
+          <h3>Airport &amp; City Transfers</h3>
+          <p>Book your shuttle or scooter transport to the airport, Bangsal Harbour, or other main points around Lombok.</p>
+          <a class="link" href="https://wa.me/6281238146001?text=Hi%21%20I%27d%20like%20to%20know%20the%20price%20and%20book%20a%20transfer%20%28shuttle%20or%20scooter%29%20to%20the%20airport%2C%20Bangsal%20or%20another%20main%20point." target="_blank">See price &amp; book via WhatsApp →</a>
+        </div>
+      </div>
+
+      <div class="card" style="cursor:default;">
+        <img src="img/fast-boat.jpg" alt="Fast Boat to Bali" style="width:100%; height:190px; object-fit:cover; border-radius:4px 4px 0 0;">
+        <div class="body">
+          <h3>Fast Boat to Bali</h3>
+          <p>Fast boat from Bangsal Harbour to Bali, drop-off included.</p>
+          <a class="link" href="https://wa.me/6281238146001?text=Hi%21%20I%27d%20like%20to%20know%20the%20price%20and%20book%20the%20fast%20boat%20from%20Bangsal%20Harbour%20to%20Bali." target="_blank">See price &amp; book via WhatsApp →</a>
+        </div>
+      </div>
+
+      <div class="card" style="cursor:default;">
+        <img src="img/snorkeling.jpg" alt="Snorkeling in the three Gilis" style="width:100%; height:190px; object-fit:cover; border-radius:4px 4px 0 0;">
+        <div class="body">
+          <h3>Snorkeling in the three Gilis</h3>
+          <p>Charter a trip to snorkel around the beautiful three Gili Islands.</p>
+          <a class="link" href="https://wa.me/6281238146001?text=Hi%21%20I%27d%20like%20to%20know%20the%20price%20and%20book%20a%20snorkeling%20trip%20in%20the%20three%20Gilis." target="_blank">See price &amp; book via WhatsApp →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Let's talk</h2>
+    <p>Message us on WhatsApp to book a room or excursion, ask a question, or just say hi.</p>
+    <a class="wa-btn" href="https://wa.me/6281238146001" target="_blank">Open WhatsApp</a>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/6281238146001" target="_blank" aria-label="WhatsApp">💬</a>
+
+<div class="copyright">© 2026 Lala Salama Hostels &amp; Excursions. All rights reserved.</div>
+
+</body>
+</html>
