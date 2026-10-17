@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Containers Hostel — Lala Salama</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html"><img src="img/logo.png" alt="Lala Salama Hostels & Excursions"></a>
+    <button class="burger" onclick="document.getElementById('navOverlay').classList.add('open')" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay">
+  <button class="close" onclick="document.getElementById('navOverlay').classList.remove('open')" aria-label="Close menu">✕</button>
+  <nav>
+    <a href="index.html#home" onclick="document.getElementById('navOverlay').classList.remove('open')">Home</a>
+    <div class="nav-item">
+      <a href="index.html#hostels" onclick="document.getElementById('navOverlay').classList.remove('open')">Hostels</a>
+      <div class="submenu">
+        <a href="lala-salama.html">Lala Salama</a>
+        <a href="containers-hostel.html">Containers Hostel</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="index.html#excursions" onclick="document.getElementById('navOverlay').classList.remove('open')">Excursions</a>
+      <div class="submenu">
+        <a href="komodo-sail.html">Lombok Komodo Sail</a>
+        <a href="rinjani-trekking.html">Mount Rinjani Trekking</a>
+      </div>
+    </div>
+    <a href="services.html" onclick="document.getElementById('navOverlay').classList.remove('open')">Services</a>
+    <a class="wa" href="https://wa.me/6281238146001" target="_blank">Contact (WhatsApp)</a>
+  </nav>
+</div>
+
+<section class="hero detail-hero">
+  <div class="wrap">
+    <a class="back-link" href="index.html#hostels">← Back to hostels</a>
+    <!-- Para añadir más fotos al carrusel: duplica la línea <img class="slide">, ponle otra ruta de imagen, y no le pongas la clase "active" (solo la primera debe tenerla) -->
+    <div class="carousel" id="carousel-containers">
+      <img class="slide active" src="img/containers-common-area.jpg" alt="Containers Hostel common area with curry menu board">
+      <img class="slide" src="img/containers-exterior-night.jpg" alt="Containers Hostel exterior at night">
+      <img class="slide" src="img/containers-rooftop.jpg" alt="Containers Hostel rooftop terrace">
+      <img class="slide" src="img/containers-lounge.jpg" alt="Containers Hostel shisha lounge">
+      <img class="slide" src="img/containers-dorm.jpg" alt="Containers Hostel dorm room">
+      <button class="car-btn prev" onclick="carouselMove('carousel-containers',-1)" aria-label="Previous photo">‹</button>
+      <button class="car-btn next" onclick="carouselMove('carousel-containers',1)" aria-label="Next photo">›</button>
+    </div>
+    <h1>Containers Hostel</h1>
+    <p class="lede">Rooms built from repurposed shipping containers in Senggigi, with a pool and shared spaces designed for slow days by the coast.</p>
+    <div class="meta-row">
+      <div class="item"><b>Senggigi</b><span>Location</span></div>
+      <div class="item"><b>Container rooms</b><span>Room types</span></div>
+      <div class="item"><b>Chilling Spaces</b><span>Highlight</span></div>
+      <div class="item"><b><a href="https://www.instagram.com/container.hostel_senggigi/" target="_blank" style="color:inherit;text-decoration:none;">@container.hostel_senggigi</a></b><span>Instagram</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>About this hostel</h2>
+    <p>Containers Hostel takes a different approach to the classic beach hostel: rooms made from reclaimed shipping containers, arranged around a central pool and open-air common area. It's a quieter alternative to Kuta, with easy access to Senggigi's beaches and sunset views over the strait.</p>
+    <p>Like Lala Salama, the front desk can arrange transport and help you book either of our excursions.</p>
+    <!-- Distancias aproximadas, basadas en la zona (Senggigi, Batu Layar) — confírmalas y ajústalas si hace falta -->
+    <div class="map-row">
+      <div class="map-card">
+        <iframe loading="lazy" src="https://maps.google.com/maps?q=Container%20Hostel%20Senggigi%2C%20Jl.%20Raya%20Senggigi%2C%20Batu%20Layar%2C%20West%20Lombok%20Regency%2C%20West%20Nusa%20Tenggara%2083355&t=&z=16&ie=UTF8&iwloc=&output=embed"></iframe>
+        <div class="label">Container Hostel Senggigi — Jl. Raya Senggigi, Batu Layar</div>
+      </div>
+      <div class="nearby">
+        <h3>What's nearby</h3>
+        <ul>
+          <li><span>Senggigi Beach</span><b>5 min walk</b></li>
+          <li><span>Indomaret Senggigi</span><b>5 min walk</b></li>
+          <li><span>Senggigi restaurants &amp; bars strip</span><b>5 min walk</b></li>
+          <li><span>ATM</span><b>8 min walk</b></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="carousel.js"></script>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Ready to book?</h2>
+    <p>Message us on WhatsApp for availability and rates.</p>
+    <a class="wa-btn" href="https://wa.me/6281238146001" target="_blank">Open WhatsApp</a>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/6281238146001" target="_blank" aria-label="WhatsApp">💬</a>
+
+<div class="copyright">© 2026 Lala Salama Hostels &amp; Excursions. All rights reserved.</div>
+
+</body>
+</html>
