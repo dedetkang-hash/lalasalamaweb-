@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mount Rinjani Trekking — Lala Salama</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html"><img src="img/logo.png" alt="Lala Salama Hostels & Excursions"></a>
+    <button class="burger" onclick="document.getElementById('navOverlay').classList.add('open')" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay">
+  <button class="close" onclick="document.getElementById('navOverlay').classList.remove('open')" aria-label="Close menu">✕</button>
+  <nav>
+    <a href="index.html#home" onclick="document.getElementById('navOverlay').classList.remove('open')">Home</a>
+    <div class="nav-item">
+      <a href="index.html#hostels" onclick="document.getElementById('navOverlay').classList.remove('open')">Hostels</a>
+      <div class="submenu">
+        <a href="lala-salama.html">Lala Salama</a>
+        <a href="containers-hostel.html">Containers Hostel</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="index.html#excursions" onclick="document.getElementById('navOverlay').classList.remove('open')">Excursions</a>
+      <div class="submenu">
+        <a href="komodo-sail.html">Lombok Komodo Sail</a>
+        <a href="rinjani-trekking.html">Mount Rinjani Trekking</a>
+      </div>
+    </div>
+    <a href="services.html" onclick="document.getElementById('navOverlay').classList.remove('open')">Services</a>
+    <a class="wa" href="https://wa.me/6281238146001" target="_blank">Contact (WhatsApp)</a>
+  </nav>
+</div>
+
+<section class="hero detail-hero">
+  <div class="wrap">
+    <a class="back-link" href="index.html#excursions">← Back to excursions</a>
+    
+    <!-- Carrusel de Rinjani -->
+    <div class="carousel" id="carousel-rinjani" style="height:280px; border-radius:4px; margin-bottom: 24px;">
+      <img class="slide active" src="img/mount-t-foto/IMG_8524.jpg" alt="Rinjani Trekking">
+      <img class="slide" src="img/mount-t-foto/IMG_8714.jpg" alt="Rinjani Trekking">
+      <img class="slide" src="img/mount-t-foto/IMG_8722.jpg" alt="Rinjani Trekking">
+      <img class="slide" src="img/mount-t-foto/IMG_8849.jpg" alt="Rinjani Trekking">
+	  <img class="slide" src="img/mount-t-foto/IMG_8657.jpg" alt="Rinjani Trekking">
+	  <img class="slide" src="img/mount-t-foto/IMG_8173.jpg" alt="Rinjani Trekking">
+	  <img class="slide" src="img/mount-t-foto/IMG_8742.jpg" alt="Rinjani Trekking">
+      <button class="car-btn prev" onclick="carouselMove('carousel-rinjani',-1)" aria-label="Previous photo">‹</button>
+      <button class="car-btn next" onclick="carouselMove('carousel-rinjani',1)" aria-label="Next photo">›</button>
+    </div>
+
+    <h1>Mount Rinjani Trekking</h1>
+    <p class="lede">A direct climb to Rinjani's 3,726m summit. Camp on the crater rim at sunset, then climb before dawn to watch the sun rise over Lombok.</p>
+    <div class="meta-row">
+      <div class="item"><b>Sembalun Lawang</b><span>Meeting point</span></div>
+      <div class="item"><b>1–10 people</b><span>Group size</span></div>
+      <div class="item"><b>Book at reception</b><span>How to book</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Two ways to do the climb</h2>
+    <p>Both routes start and finish in Sembalun, with pick-up at 5 AM from Senggigi, Mataram or Bangsal Port. Choose the option that fits your time and pace.</p>
+
+    <div class="pack-block">
+      <h3>2 Days, 1 Night — USD 139 / person</h3>
+      <div class="pack-meta"><span><b>Route:</b> Sembalun → Crater rim → Summit → Sembalun</span><span><b>Group:</b> 1–10 people</span></div>
+      <div class="itin">
+        <div class="day"><div class="label">Day 1</div><div><h3 style="font-size:1.1rem">Sembalun to the crater rim</h3><p>Breakfast in Senaru, then meet your guide and register at the park office. Hiking starts from Sembalun at 8 AM, reaching the crater rim (2,639m) around 4 PM for sunset, dinner and camping.</p></div></div>
+        <div class="day"><div class="label">Day 2</div><div><h3 style="font-size:1.1rem">Summit &amp; descent</h3><p>Wake at 2 AM and climb to the summit for sunrise. Breakfast back on the rim around 7 AM, then descend, reaching Sembalun by midday for drop-off.</p></div></div>
+      </div>
+    </div>
+
+    <div class="pack-block">
+      <h3>3 Days, 2 Nights — USD 158 / person</h3>
+      <div class="pack-meta"><span><b>Route:</b> Sembalun → Crater rim → Summit → Segara Anak Lake → Torean</span><span><b>Group:</b> 1–10 people</span></div>
+      <div class="itin">
+        <div class="day"><div class="label">Day 1</div><div><h3 style="font-size:1.1rem">Sembalun to the crater rim</h3><p>Breakfast in Senaru, hiking starts from Sembalun at 8 AM, camping on the crater rim with sunset views.</p></div></div>
+        <div class="day"><div class="label">Day 2</div><div><h3 style="font-size:1.1rem">Summit &amp; Segara Anak Lake</h3><p>Climb to the summit for sunrise, breakfast on the rim, then descend to Segara Anak Lake — relax in the hot springs and camp by the water.</p></div></div>
+        <div class="day"><div class="label">Day 3</div><div><h3 style="font-size:1.1rem">Rainforest to Torean</h3><p>Sunrise breakfast at the lake, then trek through the rainforest past waterfalls to Torean village for drop-off.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Good to know</h2>
+    <div class="info-grid">
+      <div>
+        <h3 style="font-size:1.1rem">Included</h3>
+        <ul>
+          <li>Guide and porter</li>
+          <li>Tent, sleeping bag &amp; mattress</li>
+          <li>Toilet tent</li>
+          <li>3 meals a day, water, soft drinks, fruit &amp; biscuits</li>
+          <li>Park entrance &amp; insurance</li>
+          <li>Return transport</li>
+        </ul>
+        <h3 style="font-size:1.1rem;margin-top:24px">Rent on site</h3>
+        <ul>
+          <li>Shoes — 100K IDR</li>
+          <li>Trekking poles — 100K IDR</li>
+          <li>Small backpack — 75K IDR</li>
+          <li>Jacket, long pants, gloves or flashlight — 50K IDR each</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size:1.1rem">What to bring</h3>
+        <ul>
+          <li>Passport or ID</li>
+          <li>Backpack with rain cover</li>
+          <li>Warm waterproof layers &amp; spare clothes</li>
+          <li>Gloves, hat &amp; headlamp</li>
+          <li>Sunscreen &amp; buff</li>
+          <li>Snacks &amp; personal medication</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Ready to book?</h2>
+    <p>Bookings are made at hostel reception, or message us on WhatsApp for available dates.</p>
+    <a class="wa-btn" href="https://wa.me/6281238146001" target="_blank">Open WhatsApp</a>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/6281238146001" target="_blank" aria-label="WhatsApp">💬</a>
+
+<div class="copyright">© 2026 Lala Salama Hostels &amp; Excursions. All rights reserved.</div>
+
+<!-- Modal para pantalla completa con flechas -->
+<div id="imageModal" class="img-modal">
+  <span class="img-modal-close">&times;</span>
+  <button class="img-modal-prev" aria-label="Anterior">‹</button>
+  <button class="img-modal-next" aria-label="Siguiente">›</button>
+  <img class="img-modal-content" id="fullSizeImg">
+</div>
+
+<script src="carousel.js"></script>
+</body>
+</html>

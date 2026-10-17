@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luxury Komodo Cruise — Lala Salama</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html"><img src="img/logo.png" alt="Lala Salama Hostels & Excursions"></a>
+    <button class="burger" onclick="document.getElementById('navOverlay').classList.add('open')" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay">
+  <button class="close" onclick="document.getElementById('navOverlay').classList.remove('open')" aria-label="Close menu">✕</button>
+  <nav>
+    <a href="index.html#home" onclick="document.getElementById('navOverlay').classList.remove('open')">Home</a>
+    <div class="nav-item">
+      <a href="index.html#hostels" onclick="document.getElementById('navOverlay').classList.remove('open')">Hostels</a>
+      <div class="submenu">
+        <a href="lala-salama.html">Lala Salama</a>
+        <a href="containers-hostel.html">Containers Hostel</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="index.html#excursions" onclick="document.getElementById('navOverlay').classList.remove('open')">Excursions</a>
+      <div class="submenu">
+        <a href="komodo-sail.html">Lombok Komodo Sail</a>
+        <a href="rinjani-trekking.html">Mount Rinjani Trekking</a>
+      </div>
+    </div>
+    <a href="services.html" onclick="document.getElementById('navOverlay').classList.remove('open')">Services</a>
+    <a class="wa" href="https://wa.me/6281238146001" target="_blank">Contact (WhatsApp)</a>
+  </nav>
+</div>
+
+<section class="hero detail-hero" style="padding-bottom: 20px;">
+  <div class="wrap">
+    <a class="back-link" href="komodo-sail.html">← Back to Komodo Sail</a>
+    <!-- Carrusel superior interactivo con fotos generales del barco -->
+    <div class="carousel" id="carousel-luxurytop" style="height:340px;">
+      <img class="slide active" src="img/luxury-cruise/luxury-cruise.jpg" alt="Komodo Phinisi Cruise boat, aerial view">
+      <img class="slide" src="img/luxury-cruise/IMG_20250209_005527.jpg" alt="Boat front view">
+      <img class="slide" src="img/luxury-cruise/KLM-Sultan-4.webp" alt="Boat bow view from the water">
+      <img class="slide" src="img/luxury-cruise/sultan-out.jpg" alt="Top sun deck with loungers">
+      <img class="slide" src="img/luxury-cruise/IMG-20240802-WA0011.jpg" alt="Indoor lounge area">
+      <img class="slide" src="img/luxury-cruise/IMG-20250425-WA0042.jpg" alt="Shaded relaxation area">
+      <img class="slide" src="img/luxury-cruise/KLM-Sultan-3.webp" alt="Guests dining on board">
+      <img class="slide" src="img/luxury-cruise/toilet.jpg" alt="Cabin bathroom">
+      <button class="car-btn prev" onclick="carouselMove('carousel-luxurytop',-1)" aria-label="Previous photo">‹</button>
+      <button class="car-btn next" onclick="carouselMove('carousel-luxurytop',1)" aria-label="Next photo">›</button>
+    </div>
+    <h1>Komodo Phinisi Cruise</h1>
+    <p class="lede">The ultimate way to sail to Komodo. A handcrafted 34-meter Phinisi yacht with air-conditioned cabins, full navigation and safety equipment, and a premium level of service — Lombok to Labuan Bajo, 4 days / 3 nights.</p>
+  </div>
+</section>
+
+<!-- BOAT SPECIFICATION & FACILITY -->
+<section class="alt">
+  <div class="wrap">
+    <h2>Boat specification &amp; facility</h2>
+    <div class="info-grid">
+      <div>
+        <h3 style="font-size:1.1rem">Boat specification</h3>
+        <ul>
+          <li>Length: 34 meters — Beam: 6.5 meters</li>
+          <li>Cruising speed: 7–10 knots</li>
+          <li>Fresh water capacity: 8,000 litres</li>
+          <li>Fuel capacity: 3,000 litres</li>
+          <li>Engine: Mitsubishi 6D22 &amp; Mitsubishi 10D22</li>
+          <li>Generator: 2 generators, running 24 hours</li>
+          <li>Navigation: compass, radar, AIS, GPS, map</li>
+          <li>Radio: VHF radio</li>
+          <li>Safety: life raft, life jackets, ring buoy, fire extinguisher, first aid kit</li>
+          <li>Speedboat: 6-metre tender with 40 Hp Yamaha engine</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size:1.1rem">Facility</h3>
+        <ul>
+          <li>Free wifi on the boat</li>
+          <li>Mineral water</li>
+          <li>Accommodation (live on board)</li>
+          <li>Full meals on board, comfortable dining area</li>
+          <li>Indoor area</li>
+          <li>AC cabins, front sun deck area</li>
+          <li>Top sun deck area with sun chairs</li>
+          <li>Bean bags</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CABINS & PRICE LIST -->
+<section>
+  <div class="wrap">
+    <h2>Cabins &amp; price list</h2>
+    <p style="margin-bottom: 10px;">Every cabin has air conditioning. Upper Deck cabins 1–2 and 3–5, Main Deck cabins 6–9 and 10–11, and the Lower Deck dorm (cabin 12) — see details and pricing below.</p>
+
+    <div class="room-grid" style="margin-top:28px;">
+
+      <div class="room-card">
+        <div class="room-image carousel" id="car-balcony">
+          <img class="slide active" src="img/luxury-cruise/balcony-cabin.webp" alt="Balcony Cabin">
+          <span class="room-tag">2 pax</span>
+        </div>
+        <div class="room-details">
+          <h3 style="font-size:1.15rem; margin-top:0;">Balcony Cabin</h3>
+          <p style="color:var(--stone); font-size:.92rem; margin-bottom:10px;">Upper Deck — Queen bed with balcony, private bathroom.</p>
+          <div class="room-price-book">
+            <div class="room-price"><span class="amount">IDR 8,000,000</span><span class="per"> / pax · min 2 pax</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-card">
+        <div class="room-image carousel" id="car-family">
+          <img class="slide active" src="img/luxury-cruise/family-cabin-sultan.jpg" alt="Family Cabin">
+          <span class="room-tag">2–4 pax</span>
+        </div>
+        <div class="room-details">
+          <h3 style="font-size:1.15rem; margin-top:0;">Family Cabin</h3>
+          <p style="color:var(--stone); font-size:.92rem; margin-bottom:10px;">Upper Deck — Queen bed + extra bed, private bathroom.</p>
+          <div class="room-price-book">
+            <div class="room-price"><span class="amount">IDR 7,500,000</span><span class="per"> / pax · min 2 pax</span></div>
+          </div>
+          <p style="color:var(--stone); font-size:.85rem; margin-top:8px;">Additional pax: IDR 4,250,000</p>
+        </div>
+      </div>
+
+      <div class="room-card">
+        <div class="room-image carousel" id="car-private">
+          <img class="slide active" src="img/luxury-cruise/private-cabin.webp" alt="Private Cabin, 2 pax">
+          <span class="room-tag">2 pax</span>
+        </div>
+        <div class="room-details">
+          <h3 style="font-size:1.15rem; margin-top:0;">Private Cabin</h3>
+          <p style="color:var(--stone); font-size:.92rem; margin-bottom:10px;">Main Deck — Master bed, private bathroom.</p>
+          <div class="room-price-book">
+            <div class="room-price"><span class="amount">IDR 6,500,000</span><span class="per"> / pax · min 2 pax</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-card">
+        <div class="room-image carousel" id="car-share">
+          <img class="slide active" src="img/luxury-cruise/share-cabin.webp" alt="Share Cabin">
+          <span class="room-tag">1–4 pax</span>
+        </div>
+        <div class="room-details">
+          <h3 style="font-size:1.15rem; margin-top:0;">Share Cabin</h3>
+          <p style="color:var(--stone); font-size:.92rem; margin-bottom:10px;">Main Deck — 4 x single bunk bed, bathroom inside.</p>
+          <div class="room-price-book">
+            <div class="room-price"><span class="amount">IDR 5,500,000</span><span class="per"> / pax</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-card">
+        <div class="room-image carousel" id="car-group">
+          <img class="slide active" src="img/luxury-cruise/share-cabin-2.jpg" alt="Lower Deck dorm, private charter up to 18 pax">
+          <span class="room-tag">1–18 pax</span>
+        </div>
+        <div class="room-details">
+          <h3 style="font-size:1.15rem; margin-top:0;">Private Room (group charter)</h3>
+          <p style="color:var(--stone); font-size:.92rem; margin-bottom:10px;">Lower Deck — 18 x single bunk bed, 2 bathrooms inside. Can be booked privately for a group.</p>
+          <div class="room-price-book">
+            <div class="room-price"><span class="amount">IDR 4,750,000</span><span class="per"> / pax</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Ready to book?</h2>
+    <p>Message us on WhatsApp for availability and to secure your cabin on the Komodo Phinisi Cruise.</p>
+    <a class="wa-btn" href="https://wa.me/6281238146001" target="_blank">Open WhatsApp</a>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/6281238146001" target="_blank" aria-label="WhatsApp">💬</a>
+
+<div class="copyright">© 2026 Lala Salama Hostels &amp; Excursions. All rights reserved.</div>
+
+<!-- Modal para pantalla completa con flechas (necesario para carousel.js) -->
+<div id="imageModal" class="img-modal">
+  <span class="img-modal-close">&times;</span>
+  <button class="img-modal-prev" aria-label="Anterior">‹</button>
+  <button class="img-modal-next" aria-label="Siguiente">›</button>
+  <img class="img-modal-content" id="fullSizeImg">
+</div>
+
+<script src="carousel.js"></script>
+</body>
+</html>

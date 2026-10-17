@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open Trip Standard — Lala Salama</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html"><img src="img/logo.png" alt="Lala Salama Hostels & Excursions"></a>
+    <button class="burger" onclick="document.getElementById('navOverlay').classList.add('open')" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="nav-overlay" id="navOverlay">
+  <button class="close" onclick="document.getElementById('navOverlay').classList.remove('open')" aria-label="Close menu">✕</button>
+  <nav>
+    <a href="index.html#home" onclick="document.getElementById('navOverlay').classList.remove('open')">Home</a>
+    <div class="nav-item">
+      <a href="index.html#hostels" onclick="document.getElementById('navOverlay').classList.remove('open')">Hostels</a>
+      <div class="submenu">
+        <a href="lala-salama.html">Lala Salama</a>
+        <a href="containers-hostel.html">Containers Hostel</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="index.html#excursions" onclick="document.getElementById('navOverlay').classList.remove('open')">Excursions</a>
+      <div class="submenu">
+        <a href="komodo-sail.html">Lombok Komodo Sail</a>
+        <a href="rinjani-trekking.html">Mount Rinjani Trekking</a>
+      </div>
+    </div>
+    <a href="services.html" onclick="document.getElementById('navOverlay').classList.remove('open')">Services</a>
+    <a class="wa" href="https://wa.me/6281238146001" target="_blank">Contact (WhatsApp)</a>
+  </nav>
+</div>
+
+<section class="hero detail-hero" style="padding-bottom: 0;">
+  <div class="wrap">
+    <a class="back-link" href="komodo-sail.html">← Back to Komodo Sail</a>
+    <h1>Open Trip Standard Package</h1>
+    <p class="lede" style="margin-bottom: 20px;">Social wooden vessels, large sundecks, and a great backpacker vibe. Below you will find the details of our standard boats, their departure days, and room options.</p>
+  </div>
+</section>
+
+<!-- BOATS & DEPARTURES -->
+<section class="alt" style="padding-top: 20px;">
+  <div class="wrap">
+    <h2>Our Standard Boats &amp; Departures</h2>
+    <p style="margin-bottom: 30px; color: var(--stone);">Swipe the images on each boat to see the exterior, private cabins, sharing rooms, and facilities.</p>
+    <div class="grid-2">
+      
+      <!-- Barco 1: NUR AMIRA -->
+      <div class="card" style="cursor:default;">
+        <div class="carousel" id="carousel-amira" style="height:240px; border-radius:4px 4px 0 0;">
+          <img class="slide active" src="img/nur-amira/01-Boat Nur Amira.jpg" alt="KLM Nur Amira Exterior">
+          <img class="slide" src="img/nur-amira/01-Boat Nur Amira(1).jpg" alt="KLM Nur Amira Exterior">
+          <img class="slide" src="img/nur-amira/02-Private Room.jpg" alt="KLM Nur Amira Private Room">
+          <img class="slide" src="img/nur-amira/03 - Shering Room.jpg" alt="KLM Nur Amira Sharing Room">
+          <img class="slide" src="img/nur-amira/04 Resto.jpg" alt="KLM Nur Amira Resto">
+          <img class="slide" src="img/nur-amira/05 sun roof.jpg" alt="KLM Nur Amira Sun Roof">
+          <img class="slide" src="img/nur-amira/06 Toilet_(1).jpg" alt="KLM Nur Amira Toilet">
+          <button class="car-btn prev" onclick="carouselMove('carousel-amira',-1)" aria-label="Previous photo">‹</button>
+          <button class="car-btn next" onclick="carouselMove('carousel-amira',1)" aria-label="Next photo">›</button>
+        </div>
+        <div class="body">
+          <span class="eyebrow" style="margin-bottom: 8px; display: inline-block;">Departure every Monday</span>
+          <h3 style="margin-top: 0;">KLM Nur Amira</h3>
+          <p>Capacity for 33 people (Sharing Rooms) and 6 Private Rooms. Equipped with 3 bathrooms with shower.</p>
+        </div>
+      </div>
+
+      <!-- Barco 2: BUDI JAYA -->
+      <div class="card" style="cursor:default;">
+        <div class="carousel" id="carousel-budi" style="height:240px; border-radius:4px 4px 0 0;">
+          <img class="slide active" src="img/budi-jaya/01- KLM Budi Jaya_.jpg" alt="KLM Budi Jaya Exterior">
+          <img class="slide" src="img/budi-jaya/01- KLM Budi Jaya_(1).jpg" alt="KLM Budi Jaya Exterior">
+          <img class="slide" src="img/budi-jaya/02 Private Room.jpg" alt="KLM Budi Jaya Private Room">
+          <img class="slide" src="img/budi-jaya/04-Resto.jpg" alt="KLM Budi Jaya Resto">
+          <img class="slide" src="img/budi-jaya/06 Toilet_.jpg" alt="KLM Budi Jaya Toilet">
+          <button class="car-btn prev" onclick="carouselMove('carousel-budi',-1)" aria-label="Previous photo">‹</button>
+          <button class="car-btn next" onclick="carouselMove('carousel-budi',1)" aria-label="Next photo">›</button>
+        </div>
+        <div class="body">
+          <span class="eyebrow" style="margin-bottom: 8px; display: inline-block;">Departure every Wednesday</span>
+          <h3 style="margin-top: 0;">KLM Budi Jaya</h3>
+          <p>Capacity for 30 people (Sharing Rooms) and 5 Private Rooms. Equipped with 3 bathrooms with shower.</p>
+        </div>
+      </div>
+
+      <!-- Barco 3: BERKAH BERSAMA -->
+      <div class="card" style="cursor:default;">
+        <div class="carousel" id="carousel-berkah" style="height:240px; border-radius:4px 4px 0 0;">
+          <img class="slide active" src="img/berkah-bersama/01-Boat Berkah Bersama(2).jpg" alt="KLM Berkah Bersama Exterior">
+          <img class="slide" src="img/berkah-bersama/01-Boat Berkah Bersama.jpg" alt="KLM Berkah Bersama Exterior">
+          <img class="slide" src="img/berkah-bersama/02-Private Room.jpg" alt="KLM Berkah Bersama Private Room">
+          <img class="slide" src="img/berkah-bersama/03 - Shering Room.jpg" alt="KLM Berkah Bersama Sharing Room">
+          <img class="slide" src="img/berkah-bersama/06- Toilet.jpg" alt="KLM Berkah Bersama Toilet">
+          <button class="car-btn prev" onclick="carouselMove('carousel-berkah',-1)" aria-label="Previous photo">‹</button>
+          <button class="car-btn next" onclick="carouselMove('carousel-berkah',1)" aria-label="Next photo">›</button>
+        </div>
+        <div class="body">
+          <span class="eyebrow" style="margin-bottom: 8px; display: inline-block;">Departure every Thursday</span>
+          <h3 style="margin-top: 0;">KLM Berkah Bersama</h3>
+          <p>Capacity for 35 people (Sharing Rooms) and 6 Private Rooms. Equipped with 2 bathrooms with shower.</p>
+        </div>
+      </div>
+
+      <!-- Barco 4: FAJAR FADILLAH -->
+      <div class="card" style="cursor:default;">
+        <div class="carousel" id="carousel-fajar" style="height:240px; border-radius:4px 4px 0 0;">
+          <img class="slide active" src="img/fajar-fadillah/01 - KLM Fajar Fadillah.jpg" alt="KLM Fajar Fadillah Exterior">
+          <img class="slide" src="img/fajar-fadillah/01 - KLM Fajar Fadillah_.jpg" alt="KLM Fajar Fadillah Exterior">
+          <img class="slide" src="img/fajar-fadillah/02 - Private Room.jpg" alt="KLM Fajar Fadillah Private Room">
+          <img class="slide" src="img/fajar-fadillah/03 - Shering Room(1).jpg" alt="KLM Fajar Fadillah Sharing Room">
+          <img class="slide" src="img/fajar-fadillah/05 - Sun roof_(1).jpg" alt="KLM Fajar Fadillah Sun Roof">
+          <img class="slide" src="img/fajar-fadillah/06- Toilet.jpg" alt="KLM Fajar Fadillah Toilet">
+          <button class="car-btn prev" onclick="carouselMove('carousel-fajar',-1)" aria-label="Previous photo">‹</button>
+          <button class="car-btn next" onclick="carouselMove('carousel-fajar',1)" aria-label="Next photo">›</button>
+        </div>
+        <div class="body">
+          <span class="eyebrow" style="margin-bottom: 8px; display: inline-block;">Departure every Saturday</span>
+          <h3 style="margin-top: 0;">KLM Fajar Fadillah</h3>
+          <p>Capacity for 36 people (Sharing Rooms) and 8 Private Rooms. Equipped with 4 bathrooms with shower.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CABINS & ACCOMMODATION -->
+<section>
+  <div class="wrap">
+    <h2>Cabins &amp; Accommodation</h2>
+    <p style="margin-bottom: 24px;">The following room types and inclusions apply to all our Standard Open Trip vessels.</p>
+    <div class="pack-block" style="border-top: none; padding-top: 0;">
+      <div class="itin" style="margin-top: 0;">
+        <div class="day">
+          <div class="label">Private Room</div>
+          <div>
+            <h3 style="font-size:1.1rem; margin-top:0;">IDR 4,800,000 / pax</h3>
+            <p>Private room with air conditioning and towel for two persons, including a double bed mattress, pillows, and a blanket per person.</p>
+          </div>
+        </div>
+        <div class="day">
+          <div class="label">Sharing Room</div>
+          <div>
+            <h3 style="font-size:1.1rem; margin-top:0;">IDR 3,700,000 / pax</h3>
+            <p>Sharing room with air conditioning. Includes single mattress, pillow, and blanket per person.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOAT FACILITIES -->
+<section class="alt">
+  <div class="wrap">
+    <h2>Boat Information &amp; Facilities</h2>
+    <p style="margin-bottom: 20px;">All boats use Air Conditioning, Starlink WiFi, and GoPro Documentation.</p>
+    <div class="info-grid">
+      <div>
+        <ul>
+          <li>Wifi Starlink</li>
+          <li>GoPro Documentation</li>
+          <li>Automatic Identification System, Radio, GPS, Compas</li>
+          <li>Safety Equipments: Liferaft, Life Jacket, Ring lifebuoy, etc.</li>
+          <li>Fresh Water and a simple shower</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>Snorkeling gear (mask and snorkel), no fins</li>
+          <li>Charging points for electronic devices</li>
+          <li>Small boat with engine for transfer to the beach</li>
+          <li>Cool Box with ice for your extra drink</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Ready to book?</h2>
+    <p>Message us on WhatsApp for availability and secure your spot on our Standard Trip.</p>
+    <a class="wa-btn" href="https://wa.me/6281238146001" target="_blank">Open WhatsApp</a>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/6281238146001" target="_blank" aria-label="WhatsApp">💬</a>
+
+<div class="copyright">© 2026 Lala Salama Hostels &amp; Excursions. All rights reserved.</div>
+
+<!-- Modal para pantalla completa con flechas -->
+<div id="imageModal" class="img-modal">
+  <span class="img-modal-close">&times;</span>
+  <button class="img-modal-prev" aria-label="Anterior">‹</button>
+  <button class="img-modal-next" aria-label="Siguiente">›</button>
+  <img class="img-modal-content" id="fullSizeImg">
+</div>
+
+<script src="carousel.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var modal = document.getElementById("imageModal");
+    var modalImg = document.getElementById("fullSizeImg");
+    var closeBtn = document.getElementsByClassName("img-modal-close")[0];
+    var prevBtn = document.getElementsByClassName("img-modal-prev")[0];
+    var nextBtn = document.getElementsByClassName("img-modal-next")[0];
+
+    var currentImages = []; 
+    var currentIndex = 0;   
+
+    // Selecciona todos los carruseles de la página de forma independiente
+    var carousels = document.querySelectorAll(".carousel");
+    
+    carousels.forEach(function(carousel) {
+      var slides = carousel.querySelectorAll(".slide");
+      
+      slides.forEach(function(img, index) {
+        img.style.cursor = "zoom-in";
+        
+        img.onclick = function() {
+          // Guarda solo las fotos del barco que el cliente está mirando
+          currentImages = Array.from(slides);
+          currentIndex = index;
+          
+          modal.style.display = "block";
+          updateModalImage();
+        }
+      });
+    });
+
+    function updateModalImage() {
+      modalImg.src = currentImages[currentIndex].src;
+    }
+
+    // Flecha anterior
+    prevBtn.onclick = function(e) {
+      e.stopPropagation(); // Evita que el clic cierre el fondo
+      currentIndex = (currentIndex > 0) ? currentIndex - 1 : currentImages.length - 1;
+      updateModalImage();
+    }
+
+    // Flecha siguiente
+    nextBtn.onclick = function(e) {
+      e.stopPropagation(); // Evita que el clic cierre el fondo
+      currentIndex = (currentIndex < currentImages.length - 1) ? currentIndex + 1 : 0;
+      updateModalImage();
+    }
+
+    // Cierra con la X
+    closeBtn.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // Cierra al hacer clic en el fondo oscuro
+    modal.onclick = function(e) {
+      if (e.target !== modalImg && e.target !== prevBtn && e.target !== nextBtn) {
+        modal.style.display = "none";
+      }
+    }
+  });
+</script>
+</body>
+</html>

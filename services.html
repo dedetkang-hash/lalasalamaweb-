@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Services — Lala Salama</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html"><img src="img/logo.png" alt="Lala Salama Hostels & Excursions"></a>
+    <button class="burger" onclick="document.getElementById('navOverlay').classList.add('open')" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay">
+  <button class="close" onclick="document.getElementById('navOverlay').classList.remove('open')" aria-label="Close menu">✕</button>
+  <nav>
+    <a href="index.html#home" onclick="document.getElementById('navOverlay').classList.remove('open')">Home</a>
+    <div class="nav-item">
+      <a href="index.html#hostels" onclick="document.getElementById('navOverlay').classList.remove('open')">Hostels</a>
+      <div class="submenu">
+        <a href="lala-salama.html">Lala Salama</a>
+        <a href="containers-hostel.html">Containers Hostel</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="index.html#excursions" onclick="document.getElementById('navOverlay').classList.remove('open')">Excursions</a>
+      <div class="submenu">
+        <a href="komodo-sail.html">Lombok Komodo Sail</a>
+        <a href="rinjani-trekking.html">Mount Rinjani Trekking</a>
+      </div>
+    </div>
+    <a href="services.html" onclick="document.getElementById('navOverlay').classList.remove('open')">Services</a>
+    <a class="wa" href="https://wa.me/6281238146001" target="_blank">Contact (WhatsApp)</a>
+  </nav>
+</div>
+
+<section class="hero">
+  <div class="wrap">
+    <h1 class="center">Services</h1>
+    <p class="lede center">Getting around Lombok and beyond, sorted for you — transfers, fast boats and private charters.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="grid-2 grid-3">
+
+      <div class="card" style="cursor:default;">
+        <img src="img/tranfer.jpg" alt="Airport and City Transfers" style="width:100%; height:190px; object-fit:cover; border-radius:4px 4px 0 0;">
+        <div class="body">
+          <h3>Airport &amp; City Transfers</h3>
+          <p>Book your shuttle or scooter transport to the airport, Bangsal Harbour, or other main points around Lombok.</p>
+          <a class="link" href="https://wa.me/6281238146001?text=Hi%21%20I%27d%20like%20to%20know%20the%20price%20and%20book%20a%20transfer%20%28shuttle%20or%20scooter%29%20to%20the%20airport%2C%20Bangsal%20or%20another%20main%20point." target="_blank">See price &amp; book via WhatsApp →</a>
+        </div>
+      </div>
+
+      <div class="card" style="cursor:default;">
+        <img src="img/fast-boat.jpg" alt="Fast Boat to Bali" style="width:100%; height:190px; object-fit:cover; border-radius:4px 4px 0 0;">
+        <div class="body">
+          <h3>Fast Boat to Bali</h3>
+          <p>Fast boat from Bangsal Harbour to Bali, drop-off included.</p>
+          <a class="link" href="https://wa.me/6281238146001?text=Hi%21%20I%27d%20like%20to%20know%20the%20price%20and%20book%20the%20fast%20boat%20from%20Bangsal%20Harbour%20to%20Bali." target="_blank">See price &amp; book via WhatsApp →</a>
+        </div>
+      </div>
+
+      <div class="card" style="cursor:default;">
+        <img src="img/snorkeling.jpg" alt="Snorkeling in the three Gilis" style="width:100%; height:190px; object-fit:cover; border-radius:4px 4px 0 0;">
+        <div class="body">
+          <h3>Snorkeling in the three Gilis</h3>
+          <p>Charter a trip to snorkel around the beautiful three Gili Islands.</p>
+          <a class="link" href="https://wa.me/6281238146001?text=Hi%21%20I%27d%20like%20to%20know%20the%20price%20and%20book%20a%20snorkeling%20trip%20in%20the%20three%20Gilis." target="_blank">See price &amp; book via WhatsApp →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Not sure what you need?</h2>
+    <p>Message us on WhatsApp and we'll help you plan your route.</p>
+    <a class="wa-btn" href="https://wa.me/6281238146001" target="_blank">Open WhatsApp</a>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/6281238146001" target="_blank" aria-label="WhatsApp">💬</a>
+
+<div class="copyright">© 2026 Lala Salama Hostels &amp; Excursions. All rights reserved.</div>
+
+</body>
+</html>

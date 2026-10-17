@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lala Salama Hostel — Lala Salama</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html"><img src="img/logo.png" alt="Lala Salama Hostels & Excursions"></a>
+    <button class="burger" onclick="document.getElementById('navOverlay').classList.add('open')" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay">
+  <button class="close" onclick="document.getElementById('navOverlay').classList.remove('open')" aria-label="Close menu">✕</button>
+  <nav>
+    <a href="index.html#home" onclick="document.getElementById('navOverlay').classList.remove('open')">Home</a>
+    <div class="nav-item">
+      <a href="index.html#hostels" onclick="document.getElementById('navOverlay').classList.remove('open')">Hostels</a>
+      <div class="submenu">
+        <a href="lala-salama.html">Lala Salama</a>
+        <a href="containers-hostel.html">Containers Hostel</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="index.html#excursions" onclick="document.getElementById('navOverlay').classList.remove('open')">Excursions</a>
+      <div class="submenu">
+        <a href="komodo-sail.html">Lombok Komodo Sail</a>
+        <a href="rinjani-trekking.html">Mount Rinjani Trekking</a>
+      </div>
+    </div>
+    <a href="services.html" onclick="document.getElementById('navOverlay').classList.remove('open')">Services</a>
+    <a class="wa" href="https://wa.me/6281238146001" target="_blank">Contact (WhatsApp)</a>
+  </nav>
+</div>
+
+<section class="hero detail-hero">
+  <div class="wrap">
+    <a class="back-link" href="index.html#hostels">← Back to hostels</a>
+    <div class="carousel" id="carousel-lala">
+      <img class="slide active" src="img/lalasalama/IMG_4205.jpeg" alt="Lala Salama Sign">
+      <img class="slide" src="img/lalasalama/drmczozg7tf8rdfdbv7f.webp" alt="Lala Salama Aerial">
+      <img class="slide" src="img/lalasalama/o6owsdroyvsj5uy3wqke.webp" alt="Lala Salama Aerial Pool">
+      <img class="slide" src="img/lalasalama/IMG_4179.jpeg" alt="Lala Salama Pool">
+      <img class="slide" src="img/lalasalama/IMG_4203.jpeg" alt="Lala Salama Bar">
+      <img class="slide" src="img/lalasalama/IMG_4204.jpeg" alt="Lala Salama Outdoor Dining">
+      <img class="slide" src="img/lalasalama/IMG_4206.jpeg" alt="Lala Salama Common Area">
+      <img class="slide" src="img/lalasalama/z0yzamlcx1pvrfzjr6ac.webp" alt="Lala Salama Breakfast">
+      <img class="slide" src="img/lalasalama/bcdsnii1wearja1mx8xd.webp" alt="Lala Salama Guests">
+      <img class="slide" src="img/lalasalama/bdzf9jodnae60jcgzold.webp" alt="Lala Salama Private Room">
+      <img class="slide" src="img/lalasalama/wj8ocppvdgqnhuzqpn4r.webp" alt="Lala Salama Private Room 2">
+      <img class="slide" src="img/lalasalama/c7gij07evuj0tesap3z1.webp" alt="Lala Salama Dorm">
+      <img class="slide" src="img/lalasalama/gifjnquol6zbjsvpjy3s.webp" alt="Lala Salama Dorm 2">
+      <button class="car-btn prev" onclick="carouselMove('carousel-lala',-1)" aria-label="Previous photo">‹</button>
+      <button class="car-btn next" onclick="carouselMove('carousel-lala',1)" aria-label="Next photo">›</button>
+    </div>
+    <h1>Lala Salama</h1>
+    <p class="lede">Our original hostel and bar in Senggigi — the community hub for slow mornings, sunset drinks and new travel friends.</p>
+    <div class="meta-row">
+      <div class="item"><b>Senggigi</b><span>Location</span></div>
+      <div class="item"><b>Dorms &amp; privates</b><span>Room types</span></div>
+      <div class="item"><b>Rooftop bar and pool</b><span>Highlight</span></div>
+      <div class="item"><b><a href="https://www.instagram.com/lala_salama.backpacker/" target="_blank" style="color:inherit;text-decoration:none;">@lala_salama.backpacker</a></b><span>Instagram</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>About this hostel</h2>
+    <p>Lala Salama is built around a shared rooftop terrace where guests gather for sunset and live music a few nights a week. Rooms range from budget dorms to private doubles, all a short walk from Senggigi's beaches.</p>
+    <p>The on-site bar serves breakfast, coffee and cocktails, and the front desk can help arrange transport and bookings for both of our excursions.</p>
+    <div class="map-row">
+      <div class="map-card">
+        <iframe loading="lazy" src="https://maps.google.com/maps?q=Lala%20Salama%20Backpacker%2C%20Jalan%20Jurusan%20Senggigi%2C%20Dusun%20Mentigi%2C%20Desa%20Malaka%2C%20Kec.%20Pemenang%2C%20Lombok%20Utara%2C%20Nusa%20Tenggara%20Barat%2083352&t=&z=16&ie=UTF8&iwloc=&output=embed"></iframe>
+        <div class="label">Lala Salama Backpacker — Dusun Mentigi, Desa Malaka</div>
+      </div>
+      <div class="nearby">
+        <h3>What's nearby</h3>
+        <ul>
+          <li><span>Pantai Mentigi (beach)</span><b>3 min walk</b></li>
+          <li><span>Mentigi Harbour (Gili boats)</span><b>5 min walk</b></li>
+          <li><span>Pantai Kecinan</span><b>10 min walk</b></li>
+          <li><span>Local warungs &amp; minimarket</span><b>10 min walk</b></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Ready to book?</h2>
+    <p>Message us on WhatsApp for availability and rates.</p>
+    <a class="wa-btn" href="https://wa.me/6281238146001" target="_blank">Open WhatsApp</a>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/6281238146001" target="_blank" aria-label="WhatsApp">💬</a>
+
+<div class="copyright">© 2026 Lala Salama Hostels &amp; Excursions. All rights reserved.</div>
+
+<!-- Modal para pantalla completa con flechas (necesario para carousel.js) -->
+<div id="imageModal" class="img-modal">
+  <span class="img-modal-close">&times;</span>
+  <button class="img-modal-prev" aria-label="Anterior">‹</button>
+  <button class="img-modal-next" aria-label="Siguiente">›</button>
+  <img class="img-modal-content" id="fullSizeImg">
+</div>
+
+<script src="carousel.js"></script>
+
+</body>
+</html>

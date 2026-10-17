@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+       <loc>https://lalasalamalombok.com/</loc>
+       <lastmod>2026-10-08T13:12:15+00:00</lastmod>
+       <priority>1.0000</priority>
+  </url>
+  <url>
+       <loc>https://lalasalamalombok.com/lala-salama</loc>
+       <lastmod>2026-10-08T13:12:15+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://lalasalamalombok.com/containers-hostel</loc>
+       <lastmod>2026-10-08T13:12:15+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://lalasalamalombok.com/komodo-sail</loc>
+       <lastmod>2026-10-08T13:12:15+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://lalasalamalombok.com/rinjani-trekking</loc>
+       <lastmod>2026-10-08T13:12:15+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://lalasalamalombok.com/services</loc>
+       <lastmod>2026-10-08T13:12:15+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://lalasalamalombok.com/open-trip-standard</loc>
+       <lastmod>2026-10-08T13:12:15+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://lalasalamalombok.com/luxury-komodo-cruise</loc>
+       <lastmod>2026-10-08T13:12:15+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+</urlset>

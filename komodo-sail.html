@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lombok Komodo Sail — Lala Salama</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html"><img src="img/logo.png" alt="Lala Salama Hostels & Excursions"></a>
+    <button class="burger" onclick="document.getElementById('navOverlay').classList.add('open')" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay">
+  <button class="close" onclick="document.getElementById('navOverlay').classList.remove('open')" aria-label="Close menu">✕</button>
+  <nav>
+    <a href="index.html#home" onclick="document.getElementById('navOverlay').classList.remove('open')">Home</a>
+    <div class="nav-item">
+      <a href="index.html#hostels" onclick="document.getElementById('navOverlay').classList.remove('open')">Hostels</a>
+      <div class="submenu">
+        <a href="lala-salama.html">Lala Salama</a>
+        <a href="containers-hostel.html">Containers Hostel</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="index.html#excursions" onclick="document.getElementById('navOverlay').classList.remove('open')">Excursions</a>
+      <div class="submenu">
+        <a href="komodo-sail.html">Lombok Komodo Sail</a>
+        <a href="rinjani-trekking.html">Mount Rinjani Trekking</a>
+      </div>
+    </div>
+    <a href="services.html" onclick="document.getElementById('navOverlay').classList.remove('open')">Services</a>
+    <a class="wa" href="https://wa.me/6281238146001" target="_blank">Contact (WhatsApp)</a>
+  </nav>
+</div>
+
+<!-- SECCIÓN HERO CON VIDEO DE FONDO (OPCIÓN 1) -->
+<section class="hero" style="position: relative; overflow: hidden; padding: 70px 0 90px; color: #fff;">
+  
+  <!-- 1. Video de fondo dinámico -->
+  <video autoplay loop muted playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+    <!-- Nota: Se recomienda convertir IMG_6375.MOV a .mp4 para máxima compatibilidad web, pero aquí referenciamos tu archivo -->
+    <source src="img/IMG_6375.mp4" type="video/mp4">
+    Tu navegador no soporta la etiqueta de video.
+  </video>
+
+  <!-- 2. Capa oscura (Overlay) para legibilidad del texto -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.75)); z-index: 1;"></div>
+
+  <!-- 3. Contenido de la sección (el z-index asegura que el texto esté por encima de todo) -->
+  <div class="wrap" style="position: relative; z-index: 2;">
+    <a class="back-link" href="index.html#excursions" style="color: #fff; opacity: 0.8; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 2px;">← Back to excursions</a>
+    
+    <h1 style="color: #fff; font-size: 3rem; margin-top: 30px;">Lombok to Komodo Sail</h1>
+    <p class="lede" style="color: #eaeaea; font-size: 1.12rem; max-width: 65ch;">A 4-day, 3-night open-sea voyage from Lombok to Labuan Bajo (Flores). Swim alongside whale sharks in Saleh Bay, snorkel pristine coral reefs with giant manta rays, hike Padar Island, and encounter the legendary Komodo dragons in their natural habitat.</p>
+    
+    <div class="meta-row" style="margin-top: 45px;">
+      <div class="item" style="border-left-color: var(--terracotta);">
+        <b style="color: #fff; font-size: 1.15rem;">Lombok (Kuta, Senggigi, Bangsal)</b>
+        <span style="color: #cfd4da;">Meeting point</span>
+      </div>
+      <div class="item" style="border-left-color: var(--terracotta);">
+        <b style="color: #fff; font-size: 1.15rem;">4 Days, 3 Nights</b>
+        <span style="color: #cfd4da;">Duration</span>
+      </div>
+      <div class="item" style="border-left-color: var(--terracotta);">
+        <b style="color: #fff; font-size: 1.15rem;">Labuan Bajo (Flores)</b>
+        <span style="color: #cfd4da;">Finishes in</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN: CHOOSE HOW YOU SAIL -->
+<section style="padding-top: 60px; padding-bottom: 70px;">
+  <div class="wrap">
+    <div class="eyebrow center">Our packages</div>
+    <h2 class="center">Choose how you sail</h2>
+    
+    <div class="grid-2 grid-3">
+      <!-- 1. Open Trip Standard -->
+      <a class="card" href="open-trip-standard.html" style="position:relative;">
+        <span class="room-tag" style="background:var(--terracotta); left:10px; right:auto;">Best seller</span>
+        <img class="art" src="img/fajar-fadillah/01 - KLM Fajar Fadillah.jpg" alt="Standard Boat - Fajar Fadillah" style="height:190px;width:100%;object-fit:cover;">
+        <div class="body">
+          <h3>Open Trip Standard</h3>
+          <p>Share the boat with other travelers and enjoy the full 4D3N route at the most affordable price.</p>
+          <span class="link">See boats &amp; cabins →</span>
+        </div>
+      </a>
+
+      <!-- 2. Luxury Cruise -->
+      <a class="card" href="luxury-komodo-cruise.html">
+        <img class="art" src="img/luxury-cruise/luxury-cruise.jpg" alt="Luxury Cruise Boat" style="height:190px;width:100%;object-fit:cover;">
+        <div class="body">
+          <h3>Luxury Komodo Cruise</h3>
+          <p>The same route with private air-conditioned cabins and a more premium level of service on board.</p>
+          <span class="link">See boats &amp; cabins →</span>
+        </div>
+      </a>
+
+      <!-- 3. Private Charter -->
+      <a class="card" href="https://wa.me/6281238146001" target="_blank">
+        <img class="art" src="img/komodo-boat.jpg" alt="Private Charter" style="height:190px;width:100%;object-fit:cover;">
+        <div class="body">
+          <h3>Private Charter</h3>
+          <p>Book the whole boat for your own group of friends or family, with a flexible pace and full privacy.</p>
+          <span class="link">Inquire now →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ITINERARIO -->
+<section>
+  <div class="wrap">
+    <h2>The 4-day expedition itinerary</h2>
+    
+    <div class="itin" style="margin-top: 20px;">
+      <div class="day">
+        <div class="label">Day 1</div>
+        <div>
+          <h3 style="font-size:1.1rem">Lombok to Kenawa Island &amp; Sunset Sailing</h3>
+          <p>Morning pickup from your hostel in Lombok (Kuta, Senggigi, Mataram, or Bangsal). Transfer to East Lombok harbor, board the ship, snorkel around Kenawa Island, and begin the overnight sail towards Sumbawa.</p>
+        </div>
+      </div>
+      <div class="day">
+        <div class="label">Day 2</div>
+        <div>
+          <h3 style="font-size:1.1rem">Saleh Bay (Whale Sharks) &amp; Moyo Island</h3>
+          <p>Wake up at dawn to snorkel alongside giant, gentle whale sharks in Saleh Bay. Later, anchor at Moyo Island to walk through the jungle and swim in the cascading freshwater pools of Mata Jitu waterfall.</p>
+        </div>
+      </div>
+      <div class="day">
+        <div class="label">Day 3</div>
+        <div>
+          <h3 style="font-size:1.1rem">Komodo Island, Pink Beach &amp; Padar Island</h3>
+          <p>Guided trek on Komodo Island accompanied by national park rangers to spot wild Komodo dragons. Afterwards, relax and snorkel at the world-famous Pink Beach before hiking to the top of Padar Island for sunset.</p>
+        </div>
+      </div>
+      <div class="day">
+        <div class="label">Day 4</div>
+        <div>
+          <h3 style="font-size:1.1rem">Manta Point, Kelor Island &amp; Labuan Bajo</h3>
+          <p>Morning drift snorkel with giant manta rays at Manta Point. Final beach swim and panoramic island viewpoint at Kelor Island before docking at Labuan Bajo harbor (Flores) around 2:00 PM.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- GOOD TO KNOW -->
+<section class="alt">
+  <div class="wrap">
+    <h2>Good to know</h2>
+    <div class="info-grid">
+      <div>
+        <h3 style="font-size:1.1rem">Included</h3>
+        <ul>
+          <li>4 days and 3 nights accommodation onboard as booked</li>
+          <li>All meals onboard (freshly cooked breakfast, lunch, and dinner)</li>
+          <li>Unlimited drinking mineral water, tea, and local coffee</li>
+          <li>Snorkeling gear (mask and snorkel) and life jackets</li>
+          <li>Experienced Indonesian captain, boat crew, and English-speaking tour guide</li>
+          <li>Pickup transfer from your accommodation in Lombok</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size:1.1rem">Not included</h3>
+        <ul>
+          <li>Komodo National Park entrance &amp; ranger government conservation fees</li>
+          <li>Flights departing from Labuan Bajo (LBJ)</li>
+          <li>Accommodation in Labuan Bajo after the tour concludes</li>
+          <li>Beer, soft drinks, or personal snacks (available for purchase onboard)</li>
+          <li>Personal travel insurance</li>
+          <li>Crew tips (optional and appreciated)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="info-grid" style="margin-top: 40px;">
+      <div>
+        <h3 style="font-size:1.1rem">Packing recommendations</h3>
+        <ul>
+          <li>Original passport (mandatory for harbor clearance)</li>
+          <li>Light casual clothes, swimwear &amp; beach towel</li>
+          <li>Comfortable trekking shoes or sneakers for Padar Island</li>
+          <li>Reef-safe sunscreen &amp; mosquito repellent</li>
+          <li>Power bank &amp; dry bag for camera / phone</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="carousel.js"></script>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Ready to sail?</h2>
+    <p>Both Standard and Luxury boats depart on fixed weekly schedules and cabins sell out early. Contact us on WhatsApp to verify available dates and secure your spot.</p>
+    <a class="wa-btn" href="https://wa.me/6281238146001" target="_blank">Open WhatsApp</a>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/6281238146001" target="_blank" aria-label="WhatsApp">💬</a>
+
+</body>
+</html>
